@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "./components/Weather";
+import Weather from "./components/Weather";
+("./components/Weather");
 import "./App.css";
 
 function App() {
