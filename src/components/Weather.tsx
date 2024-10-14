@@ -1,15 +1,15 @@
 const weatherList = [
 	{
 		date: "Today",
-		imgSrc: "./assets/pics/sun.jpg",
+		imgSrc: "src/assets/pics/sun.jpg",
 	},
 	{
 		date: "Tomorrow",
-		imgSrc: "./assets/pics/moon.jpg",
+		imgSrc: "src/assets/pics/moon.jpg",
 	},
 	{
 		date: "Wednesday",
-		imgSrc: "./assets/pics/rain.jpg",
+		imgSrc: "src/assets/pics/rain.jpg",
 	},
 	{
 		date: "Thursday",
@@ -30,9 +30,11 @@ const weatherList = [
 ];
 export default function Weather() {
 	const meteo = {
-		image: weatherList[0].imgSrc,
+		image: weatherList[2].imgSrc,
 		date: weatherList[0].date,
 	};
+
+	console.log(meteo.image);
 	return (
 		<figure>
 			{meteo.image != null ? (
