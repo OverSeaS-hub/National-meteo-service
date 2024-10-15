@@ -8,32 +8,32 @@ import { useState } from "react";
 
 const weatherList = [
 	{
-		date: "Today",
-		imgSrc: "src/assets/pics/sun.jpg",
+		date: "Today [13°~18°]",
+		imgSrc: "src/assets/pics/nuageux.png",
 	},
 	{
-		date: "Tomorrow",
-		imgSrc: "src/assets/pics/moon.jpg",
+		date: "Tomorrow [16°~24°]",
+		imgSrc: "src/assets/pics/wind.png",
 	},
 	{
-		date: "Thursday",
-		imgSrc: "src/assets/pics/rain.jpg",
+		date: "Thursday [12°~20°]",
+		imgSrc: "src/assets/pics/pluie.png",
 	},
 	{
-		date: "Friday",
-		imgSrc: "",
+		date: "Friday [12°~17°]",
+		imgSrc: "src/assets/pics/wind.png",
 	},
 	{
-		date: "Saturday",
-		imgSrc: "",
+		date: "Saturday [8°~17°]",
+		imgSrc: "src/assets/pics/nuageux.png",
 	},
 	{
-		date: "Sunday",
-		imgSrc: "",
+		date: "Sunday [10°~17°]",
+		imgSrc: "src/assets/pics/storm.png",
 	},
 	{
-		date: "Monday",
-		imgSrc: "",
+		date: "Monday [-13°~-40°]",
+		imgSrc: "src/assets/pics/snow.png",
 	},
 ];
 

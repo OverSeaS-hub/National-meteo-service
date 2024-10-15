@@ -26,14 +26,24 @@ interface weather {
 */
 function Meteo({ weather }: weather) {
 	return (
-		<figure>
-			{weather.imgSrc != null ? (
-				<img src={weather.imgSrc} alt="weatherpic" />
-			) : (
-				<p>???</p>
-			)}
-			<figcaption>{weather.date}</figcaption>
-		</figure>
+		<div
+			style={{
+				backgroundImage: "url(src/assets/pics/morning_time.jpg)",
+				backgroundSize: "cover",
+				backgroundRepeat: "no-repeat",
+				height: "550px",
+				width: "auto",
+			}}
+		>
+			<figure>
+				{weather.imgSrc != null ? (
+					<img src={weather.imgSrc} alt="weatherpic" />
+				) : (
+					<p>???</p>
+				)}
+				<figcaption>{weather.date}</figcaption>
+			</figure>
+		</div>
 	);
 }
 
