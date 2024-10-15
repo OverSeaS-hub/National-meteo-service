@@ -1,37 +1,14 @@
-const weatherList = [
-	{
-		date: "Today",
-		imgSrc: "src/assets/pics/sun.jpg",
-	},
-	{
-		date: "Tomorrow",
-		imgSrc: "src/assets/pics/moon.jpg",
-	},
-	{
-		date: "Wednesday",
-		imgSrc: "src/assets/pics/rain.jpg",
-	},
-	{
-		date: "Thursday",
-		imgSrc: "",
-	},
-	{
-		date: "Friday",
-		imgSrc: "",
-	},
-	{
-		date: "Saturday",
-		imgSrc: "",
-	},
-	{
-		date: "Sunday",
-		imgSrc: "",
-	},
-];
-export default function Weather() {
+interface weather {
+	weather: {
+		imgSrc: string;
+		date: string;
+	};
+}
+
+/*export default function Weather() {
 	const meteo = {
 		image: weatherList[2].imgSrc,
-		date: weatherList[0].date,
+		date: weatherList[2].date,
 	};
 
 	console.log(meteo.image);
@@ -46,3 +23,18 @@ export default function Weather() {
 		</figure>
 	);
 }
+*/
+function Meteo({ weather }: weather) {
+	return (
+		<figure>
+			{weather.imgSrc != null ? (
+				<img src={weather.imgSrc} alt="weatherpic" />
+			) : (
+				<p>???</p>
+			)}
+			<figcaption>{weather.date}</figcaption>
+		</figure>
+	);
+}
+
+export default Meteo;
