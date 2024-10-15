@@ -1,7 +1,7 @@
 const weatherList = [
 	{
 		date: "Today",
-		imgSrc: "src/assets/pics/sun.jpg",
+		imgSrc: "src/assets/pics/morning time.jpg",
 	},
 	{
 		date: "Tomorrow",
@@ -30,7 +30,7 @@ const weatherList = [
 ];
 export default function Weather() {
 	const meteo = {
-		image: weatherList[2].imgSrc,
+		image: weatherList[0].imgSrc,
 		date: weatherList[0].date,
 	};
 
@@ -42,7 +42,10 @@ export default function Weather() {
 			) : (
 				<p>weather</p>
 			)}
+
 			<figcaption>{meteo.date}</figcaption>
+			<p>13°</p>
+			<p>Sunny</p>
 		</figure>
 	);
 }
