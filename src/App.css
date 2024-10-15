@@ -17,4 +17,13 @@ img {
 }*/
 div > button {
 	background-color: orangered;
+	padding: 1rem;
+	margin: 0.5rem;
+	border-radius: 10px;
+	width: 75px;
+}
+.app-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }

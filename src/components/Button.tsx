@@ -1,14 +1,19 @@
 interface ButtonProps {
 	index: number;
 	setIndex: (index: number) => void;
+	arrayLength: number;
 }
 
-function Button({ index, setIndex }: ButtonProps) {
+function Button({ index, setIndex, arrayLength }: ButtonProps) {
 	const increment = () => {
-		setIndex(index + 1);
+		if (index < arrayLength - 1) {
+			setIndex(index + 1);
+		}
 	};
 	const decrement = () => {
-		setIndex(index - 1);
+		if (index > 0) {
+			setIndex(index - 1);
+		}
 	};
 	console.log(index);
 	return (

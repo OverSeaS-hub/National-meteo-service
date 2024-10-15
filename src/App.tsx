@@ -40,10 +40,14 @@ const weatherList = [
 function App() {
 	const [index, setIndex] = useState(0);
 	return (
-		<>
+		<div className="app-container">
 			<Meteo weather={weatherList[index]} />
-			<Button index={index} setIndex={setIndex} />
-		</>
+			<Button
+				index={index}
+				setIndex={setIndex}
+				arrayLength={weatherList.length}
+			/>
+		</div>
 	);
 }
 

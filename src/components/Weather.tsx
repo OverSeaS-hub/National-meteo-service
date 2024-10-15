@@ -26,15 +26,7 @@ interface weather {
 */
 function Meteo({ weather }: weather) {
 	return (
-		<div
-			style={{
-				backgroundImage: "url(src/assets/pics/morning_time.jpg)",
-				backgroundSize: "cover",
-				backgroundRepeat: "no-repeat",
-				height: "550px",
-				width: "auto",
-			}}
-		>
+		<div className="meteo-container">
 			<figure>
 				{weather.imgSrc != null ? (
 					<img src={weather.imgSrc} alt="weatherpic" />
