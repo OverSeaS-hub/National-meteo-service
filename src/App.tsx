@@ -3,11 +3,12 @@ import Weather from "./components/Weather";
 ("./components/Weather");
 import "./App.css";
 
-function App() {
+function App() { 
 	return (
 		<>
 			<Weather />
 		</>
+		
 	);
 }
 
