@@ -4,6 +4,7 @@
 import "./App.css";
 import Meteo from "./components/Weather";
 import Button from "./components/Button";
+import { useState } from "react";
 
 const weatherList = [
 	{
@@ -37,10 +38,11 @@ const weatherList = [
 ];
 
 function App() {
+	const [index, setIndex] = useState(0);
 	return (
 		<>
-			<Meteo weather={weatherList[0]} />
-			<Button />
+			<Meteo weather={weatherList[index]} />
+			<Button index={index} setIndex={setIndex} />
 		</>
 	);
 }

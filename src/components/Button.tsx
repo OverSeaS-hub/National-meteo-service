@@ -1,14 +1,16 @@
-import { useState } from "react";
+interface ButtonProps {
+	index: number;
+	setIndex: (index: number) => void;
+}
 
-function Button() {
-	const [count, setCount] = useState(0);
+function Button({ index, setIndex }: ButtonProps) {
 	const increment = () => {
-		setCount(count + 1);
+		setIndex(index + 1);
 	};
 	const decrement = () => {
-		setCount(count - 1);
+		setIndex(index - 1);
 	};
-	console.log(count);
+	console.log(index);
 	return (
 		<>
 			<div>
